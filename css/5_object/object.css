@@ -1,0 +1,142 @@
+#navigation > ul> li{
+    display: inline-block;
+}
+
+#navigation > ul> li > a {
+    text-decoration: none;
+    color: #6060f2;
+    /* mesma altura do logo */
+    line-height: 48px;
+    font-weight: bold;   
+    font-size: 10pt;
+    /* medida de baixo/cima e lados  */
+    padding: 0 5px; 
+    /* transição em todos os sentidos, duração de 3s, e efeito easy in out */
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+#navigation > ul> li > a:hover {
+    color:#8a378d;
+    border-bottom: .5px  dotted #8a378d;
+    border-top: .5px dotted #8a378d;
+    padding: 10px 15px;
+
+}  
+
+.button{
+    font-size: 9pt;
+    width: 154px;
+    height: 40px;
+    margin: 0 16px 469px 0;
+    padding: 10px 40px 11px;
+    border:none;
+    color:white;
+    cursor: pointer;
+    border-radius: 37px;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: #5195f6;
+    margin-left:5px;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+
+.button >img{
+    height: 23px;
+    vertical-align: middle;
+
+}
+
+.button:hover{
+    background-color: #8a378d;
+}
+
+#article >span{
+    margin-top: 67px;
+    width: 314px;
+    height: 318px;
+    margin: 8px 206px 142px 59px;
+    opacity: 0.23;
+    font-size: 239px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 23.9px;
+    text-align: center;
+    color: #a4a4a4;
+    position: absolute;
+    /* irá uma camada para trás */
+    z-index: -1;
+}
+
+#article >h1{
+    margin-top: 175px;
+    width: 392px;
+    margin: 102px 177px 178px 10px;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 1.32;
+    text-align: center;
+    color: #6c72f3;
+}
+
+#article > h2{
+    margin-top: -158px;
+    width: 394px;
+    height: 88px;
+    font-size: 17px;
+    line-height: 1.29;
+    text-align: center;
+    color: #a4a4a4;
+}
+
+.send-mesage{
+    width: 392px;
+    height: 60px;
+    margin: 54px 169px 213px 1px;
+    padding: 9px 13px 8px 38px;
+    border-radius: 40px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.send-mesage i>img{
+    /* posicao relativa onde ela está dentro */
+    position: relative;
+    top: 3px;
+    padding-left: 15px;
+}
+
+.send-mesage >input{
+    padding: 25px 8px;
+    border: none;
+}
+
+
+/* remover a borda da caixa de input */
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.send-mesage> button{
+    text-transform: uppercase;
+    color: white;
+    width: 93px;
+    height: 43px;
+    margin: 0 0 0 61px;
+    padding: 12px 21px 11px 22px;
+    border-radius: 33px;
+    background-color: #6c72f3;
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+.send-mesage> button:hover{
+    background-color: #f4891f;
+}
