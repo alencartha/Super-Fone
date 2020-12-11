@@ -3,7 +3,7 @@
 @media only screen and (max-width:550px){
 
     #brand{
-        margin-left: 15px;
+        margin-left: 10px;
     }
 
     #btn-bag, #btn-login{
@@ -17,4 +17,50 @@
         z-index: -1;
         opacity: .5;
     }
+
+    #navigation{
+        
+        top: 80px;
+        position: absolute;
+        /* largura 100% tela */
+        width: 100%;
+        /* altura 100% da tela */
+        height: calc (100vh -80px);
+        left: -100%;
+        background-color: #535cf8;
+        /* mandar para frente de todos os elementos */
+        z-index: 10;
+    }
+
+    #navigation> ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navigation> ul >li{
+        padding: 30px 0px;
+    }
+
+    #navigation> ul > li >a{
+        /* para forcar a regar, colocar o important */
+        color:white !important;
+        border: none !important;
+        font-size: 17px !important;
+        letter-spacing: 1.5;
+        font-weight: 100;
+    }
+
+    #navigation> ul > li >a:hover{
+        color:#f4891f !important;
+    }
+
+    .menu-toggle{
+        opacity: 1 !important;
+    }
+
+    #navigation .active{
+        left: 0;
+    }
+    
 }
