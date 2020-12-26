@@ -122,7 +122,7 @@ textarea:focus, input:focus, select:focus {
     outline: 0;
 } 
 
-.send-mesage> button{
+.send-mesage> a> button{
     text-transform: uppercase;
     color: white;
     width: 93px;
@@ -137,8 +137,13 @@ textarea:focus, input:focus, select:focus {
     -webkit-transition: all .4s ease-in-out;
 }
 
-.send-mesage> button:hover{
+.send-mesage> a> button:hover{
     background-color: #f4891f;
+    ]border: none;
+}
+
+.send-mesage> a> button:active{
+    border: none;
 }
 
 .modalDialog{
@@ -184,7 +189,7 @@ textarea:focus, input:focus, select:focus {
 
 .side-left{
     width: 45%;
-    background-color: #488cf5;
+    background-color: #6C72F3;
     padding-top: 130px;
     opacity: .5;
 }
@@ -221,10 +226,15 @@ textarea:focus, input:focus, select:focus {
     box-shadow: 1px 1px 3px #000;
     -webkit-box-shadow: 1px 1px 3px #000;
     -moz-box-shadow: 1px 1px 3px #000;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
 }
 
+
+/* "x" de fechar o modal, pseudoelemento, o link nao tem nenhum conteudo inicoalmente, aqui adicionei um content, o x */
 .closeModal:after{
     content: "\d7";
+    
 }
 
 .closeModal:hover{

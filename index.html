@@ -46,7 +46,9 @@
                 <!-- tag i representa icone -->
                 <i><img src="img/envelope.png" alt="Icone de uma carta"></i>
                 <input type="email" placeholder="Escreva seu e-mail">
+                <a href="#open-modal">
                 <button id="btn-send">Enviar</button>
+                </a>
             </div>
         </article>
 
@@ -59,6 +61,21 @@
         </footer>
 
     </section>
+
+    <div id="open-modal" class="modalDialog">
+        <div class="body-modal">
+            <a href="#close" title="Fechar" class="closeModal"></a>
+            <div class="side-left">
+                <img src="img/phone.png" class="phone-msg">
+                <img src="img/envelope.png" alt="ícone de uma carta">
+                <h1>Mensagem enviada</h1>
+            </div>
+            <div class="side-right">
+                <p>Obrigada por enviar a mensagem, vamos responder em breve!</p>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script>
         // lendo o documento "document", ready,vai disparar uma função quando a tela for lida

@@ -2,7 +2,7 @@
 @import "4_base/base.css";
 /* componentes dos containers */
 @import "6_components/components.css";
-/* objetos como botões, imagens, navbar */
+/* objetos como botões, imagens, navbar, modal */
 @import "5_object/object.css";
 /* estilos sobrescritos */
 @import "7_trump/trump.css";
