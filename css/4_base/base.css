@@ -29,8 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-	font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -47,43 +47,39 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* 
- toda a página */
+
 #container{
     display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-areas:"header header"
-                        "article picture"      
-						"footer picture";
-	width: 80%;
-
-	/* posicionado no centro, 25 topo  e auto fazendo ele ir para o meio */
-	margin: 20px auto;		
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header  header"
+                         "article picture"
+                         "footer  picture";
+    width: 80%;
+    margin: 25px auto;
+    min-width: 550px;
+    
 }
 
-/* altura do header 48px, display flex */
 header{
     grid-area: header;
-    height: 48px;
-    display:flex;
+    height: 40px;
+    display: flex;
 }
 
-/* nav menu ficará ocupando maior parte do container flex */
 nav{
-    flex-grow:1;
-}
-
-picture{
-	grid-area:picture;
-	/* para a posição da imagem ficar no fim no container picture */
-	justify-self: end;
+    flex-grow: 1;
 }
 
 article{
-	grid-area:article;
-	
+    grid-area: article;
+}
+
+picture{
+    grid-area: picture;
+    justify-self: end;
 }
 
 footer{
-	grid-area:footer;
+    grid-area: footer !important;
 }
+

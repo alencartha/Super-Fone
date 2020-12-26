@@ -1,4 +1,4 @@
-#brand > img{
+#brand >a> img{
     height: 48px;
 }
 
@@ -25,5 +25,6 @@
 #footer >small{
     font-size: 17px;
     text-align: center;
-    color: #a4a4a4;
+    color: #979797;
+    padding-left: 40px;
 }
