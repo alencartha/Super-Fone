@@ -1,6 +1,6 @@
 # Super Fone
 
-Estudo de Design.
+Estudo de Design/CSS Grid Layout.
 
 Ferramentas utilizadas:
 - VS Code (Html/Css);
