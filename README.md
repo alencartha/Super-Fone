@@ -1,6 +1,6 @@
 # Super Fone
 
-Estudo de responsividade.
+Estudo de Design.
 
 Ferramentas utilizadas:
 - VS Code (Html/Css);
